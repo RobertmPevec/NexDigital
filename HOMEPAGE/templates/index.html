@@ -1,0 +1,1165 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>NexDigital | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- ========================= CSS here ========================= -->
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap-5.0.0-alpha.min.css' %}">
+        <link rel="stylesheet" href="lineicons.css">
+        <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/tiny-slider.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/glightbox.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+        <!-- Include MDBootstrap CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- ========================= preloader start ========================= -->
+    <div class="modal fade" id="initialModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">If you are looking for the creator portal, click below. </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stay</button>
+            <button type="button" class="btn btn-primary" href"javascript:void(0)">Enter Creator Portal</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <!-- ========================= header start ==  ======================= -->
+        <header class="header navbar-area bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="{% static 'assets/img/logo/logo.png' %}" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#pricing">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#services">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#trending">Trending</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/login" id="login-navbar">Login</a>
+                                    </li>
+                                </ul>
+                                <div class="header-btn">
+                                    <a href="javascript:void(0)" class="theme-btn">Get Started</a>
+                                </div>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        
+        </header>
+        <!-- ========================= header end ========================= -->
+
+        <!-- ========================= carousel-section start ========================= -->
+        <section id="home" class="carousel-section-wrapper">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-section carousel-item active clip-bg pt-225 pb-200 img-bg"
+                    style="background-image: url('{% static 'assets/img/carousel/5.jpeg' %}');">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-10 mx-auto">
+                                    <div class="carousel-content text-center">
+                                        <div class="section-title">
+                                            <h2 class="text-white">Transform Inefficient Ad Spend into Targeted Success</h2>
+                                            <p class="text-white">Tired of wasting money on ads that don't reach the right audience? Our platform connects you with tailored creator partnerships that drive real engagement and sales, maximizing every marketing dollar.</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="theme-btn border-btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-section carousel-item clip-bg pt-225 pb-200 img-bg"
+                    style="background-image: url('{% static 'assets/img/carousel/1.jpeg' %}');">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-10 mx-auto">
+                                    <div class="carousel-content text-center">
+                                        <div class="section-title">
+                                            <h2 class="text-white">Target Niche Markets with Any Budget
+                                            </h2>
+                                            <p class="text-white">Reach precisely the audience you need with creators of any size—small, medium, or large. Tailor your campaigns to maximize impact and engagement, regardless of your budget.</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="theme-btn border-btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-section carousel-item clip-bg pt-225 pb-200 img-bg"
+                    style="background-image: url('{% static 'assets/img/carousel/6.jpeg' %}');">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-10 mx-auto">
+                                    <div class="carousel-content text-center">
+                                        <div class="section-title">
+                                            <h2 class="text-white">Performance-Based Payments</h2>
+                                            <p class="text-white">Pay influencers based on actual sales they generate. Set flexible payment models that align your marketing budget with real results, ensuring every dollar spent contributes directly to your growth. </p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="theme-btn border-btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- ========================= carousel-section end ========================= -->
+
+        <!-- ========================= client-logo-section start ========================= -->
+        <section class="client-logo-section pt-100 pb-100">
+            <div class="container">
+                <div class="client-logo-wrapper">
+                    <div class="client-logo-carousel d-flex align-items-center justify-content-between">
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/seatgeek.svg' %}" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/nordvpn.svg' %}" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/americaneagle.svg' %}" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/samsung.svg' %}" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/hyperx.svg' %}" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/manscaped.svg' %}" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/honey.svg' %}" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="{% static 'assets/img/client-logo/betterhelp.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= client-logo-section end ========================= -->
+
+        <!-- ========================= team-section start ========================= -->
+        <section id="team" class="team-section img-bg pt-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-7 col-md-10 mx-auto">
+                        <div class="section-title text-center mb-60">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">Featured Creators</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">10,000+ Influencers</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Join us today to access a vast network of over 10,000 creators, ready to amplify your brand and engage with your target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="team-img">
+<img src="{% static 'assets/img/team/team-1.png' %}" alt="">
+                                <div class="team-social">
+                                    <ul class="p-0 m-0 d-flex justify-content-center">
+                                        <li><a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank"><i class="lni lni-youtube"></i></a></li>
+                                        <li><a href="https://x.com/MrBeast" target="_blank"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="https://www.tiktok.com/@mrbeast?lang=en" target="_blank"><i class="lni lni-tiktok"></i></a></li>
+                                        <li><a href="https://www.instagram.com/mrbeast/" target="_blank"><i class="lni lni-instagram-filled"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4>MrBeast</h4>
+                                <span>Entertainment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="team-img">
+                                <img src="{% static 'assets/img/team/team-2.png' %}" alt="">
+                                <div class="team-social">
+                                    <ul class="p-0 m-0 d-flex justify-content-center">
+                                        <li><a href="https://www.youtube.com/channel/UCq8DICunczvLuJJq414110A" target="_blank"><i class="lni lni-youtube"></i></a></li>
+                                        <li><a href="https://x.com/zachking?lang=en" target="_blank"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="https://www.tiktok.com/@zachking?lang=en" target="_blank"><i class="lni lni-tiktok"></i></a></li>
+                                        <li><a href="https://www.instagram.com/zachking/?hl=en" target="_blank"><i class="lni lni-instagram-filled"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4>Zach King</h4>
+                                <span>Magic/Comedy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="team-img">
+                                <img src="{% static 'assets/img/team/team-3.png' %}" alt="">
+                                <div class="team-social">
+                                    <ul class="p-0 m-0 d-flex justify-content-center">
+                                        <li><a href="https://www.youtube.com/@safiya" target="_blank"><i class="lni lni-youtube"></i></a></li>
+                                        <li><a href="" target="_blank"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="https://www.tiktok.com/@safiyany?lang=en" target="_blank"><i class="lni lni-tiktok"></i></a></li>
+                                        <li><a href="https://www.instagram.com/safiyany/?hl=en" target="_blank"><i class="lni lni-instagram-filled"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4>Safiya Nygaard</h4>
+                                <span>Fashion/Beauty</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-40 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="team-img">
+                                <img src="{% static 'assets/img/team/team-4.jpg' %}" alt="">
+                                <div class="team-social">
+                                    <ul class="p-0 m-0 d-flex justify-content-center">
+                                        <li><a href="https://www.youtube.com/channel/UCMiJRAwDNSNzuYeN2uWa0pA" target="_blank"><i class="lni lni-youtube"></i></a></li>
+                                        <li><a href="https://x.com/Mrwhosetheboss" target="_blank"><i class="lni lni-twitter-filled"></i></a></li>
+                                        <li><a href="https://www.tiktok.com/@mrwhosetheboss?lang=en" target="_blank"><i class="lni lni-tiktok"></i></a></li>
+                                        <li><a href="https://www.instagram.com/mrwhosetheboss/?hl=en" target="_blank"><i class="lni lni-instagram-filled"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h4>MrWhosTheBoss</h4>
+                                <span>Tech Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= team-section end ========================= -->
+
+
+        <!-- ========================= feature-section start ========================= -->
+        <section id="features" class="feature-section pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
+                        <div class="section-title text-center mb-55">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">Features</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Creator Discovery</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style">
+                            <div class="feature-icon box-icon-style">
+                                <i class="lni lni-search-alt"></i>
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Find the Perfect Creators for Your Brand</h4>
+                                <p>Leverage our platform's data-driven discovery tools to identify creators who genuinely align with your brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style">
+                            <div class="feature-icon box-icon-style">
+                                <i class="lni lni-layers"></i>
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Streamline Creator Campaigns</h4>
+                                <p>Our platform streamlines the entire process—from contract management to content creation, tracking sales, and handling payments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-box box-style">
+                            <div class="feature-icon box-icon-style">
+                                <i class="lni lni-investment"></i>
+                            </div>
+                            <div class="box-content-style feature-content">
+                                <h4>Optimize for Maximum Impact</h4>
+                                <p>Leverage our data-driven tools to optimize your campaigns and maximize ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= feature-section end ========================= -->
+
+        <!--========================= about-section start========================= -->
+        <section id="about" class="pt-100">
+            <div class="about-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="about-img-wrapper">
+                                <div class="about-img position-relative d-inline-block wow fadeInLeft" data-wow-delay=".3s">
+                                    <img src="{% static 'assets/img/about/about-img.png' %}" alt="">
+
+                                    <div class="about-experience">
+                                        <h3>Over 10,000 Influencers in our Network</h3>
+                                        <p>Choose from over 10,000 creators to represent your brand</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="about-content-wrapper">
+                                <div class="section-title">
+                                    <span class="wow fadeInUp" data-wow-delay=".2s">Why Us?</span>
+                                    <h2 class="mb-40 wow fadeInRight" data-wow-delay=".4s">Accelerate Revenue with Influencer Marketing</h2>
+                                </div>
+                                <div class="about-content">
+                                    <p class="mb-45 wow fadeInUp" data-wow-delay=".6s">Our tools enable you to optimize every campaign for greater efficiency and impact, ensuring your marketing dollars deliver the best possible returns.</p>
+                                    <div class="counter-up wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="counter">
+                                            <span id="secondo" class="countup count color-1" cup-end="15000" cup-append="+">15000+</span>
+                                            <h4>Successful Campaigns</h4>
+                                            <p>Join over 1,000 top-performing clients who trust our platform to deliver impactful influencer marketing strategies that drive engagement and growth.</p>
+                                        </div>
+                                        <div class="counter">
+                                            <span id="secondo" class="countup count color-2" cup-end="6" cup-append="x">6x</span>
+                                            <h4>Higher ROI</h4>
+                                            <p>Enjoy six times the return on advertising by leveraging targeted influencer partnerships that maximize your marketing budget's effectiveness.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================= about-section end========================= -->
+
+        <!-- ========================= subscription-section start ========================= -->
+
+        <section id="pricing" class="bsb-pricing-3 py-5 py-xl-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
+                        <div class="section-title text-center mb-55">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">Subscribe</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">30-Day Free Trial</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-fluid bg-light border pb-4 mt-md-6 shadow" id="subscribe-spacing">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="card border-0 bg-transparent">
+                                        <div class="card-body p-4 p-xxl-5">
+                                            <h2 class="h4 mb-2">Standard</h2>
+                                            <p class="text-secondary m-0">30-day free trial</p>
+                                            <hr class="my-4 border-dark-subtle">
+                                            <h4 class="display-3 fw-bold text-primary m-0">$99</h4>
+                                            <p class="text-secondary m-0">USD / Month</p>
+                                            <div class="d-grid gap-2 my-4">
+                                                <a href="#!" class="btn btn-lg btn-outline-primary">Choose Plan</a>
+                                            </div>
+                                            <ul class="list-group list-group-flush m-0">
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Campaign Performance Metrics</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>AI-Powered Creator Selection</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Access to <strong>10,000+</strong> Influencers</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span><strong>24/7</strong> Support</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>API Integration Access</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span><strong>1</strong> Ad Account</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card bg-white border-0 border-top pt-md-6 shadow-sm bsb-pricing-popular">
+                                        <div class="card-body position-relative p-4 p-xxl-5">
+                                            <span class="badge text-bg-warning position-absolute top-0 start-50 translate-middle"></span>
+                                            <h2 class="h4 mb-2">Pro</h2>
+                                            <p class="text-secondary m-0">30-day free trial</p>
+                                            <hr class="my-4 border-dark-subtle">
+                                            <h4 class="display-3 fw-bold text-primary m-0">$199</h4>
+                                            <p class="text-secondary m-0">USD / Month</p>
+                                            <div class="d-grid gap-2 my-4">
+                                                <a href="#!" class="btn btn-lg btn-primary">Choose Plan</a>
+                                            </div>
+                                            <ul class="list-group list-group-flush m-0">
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Campaign Performance Metrics</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>AI-Powered Creator Selection</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Access to <strong>10,000+</strong> Influencers</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span><strong>24/7</strong> Support</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>API Integration Access</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Up to <strong>3</strong> Ad Accounts</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card border-0 bg-transparent">
+                                        <div class="card-body p-4 p-xxl-5">
+                                            <h2 class="h4 mb-2">Enterprise</h2>
+                                            <p class="text-secondary m-0">30-day free trial</p>
+                                            <hr class="my-4 border-dark-subtle">
+                                            <h4 class="display-3 fw-bold text-primary m-0">$499</h4>
+                                            <p class="text-secondary m-0">USD / Month</p>
+                                            <div class="d-grid gap-2 my-4">
+                                                <a href="#!" class="btn btn-lg btn-outline-primary">Choose Plan</a>
+                                            </div>
+                                            <ul class="list-group list-group-flush m-0">
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Campaign Performance Metrics</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>AI-Powered Creator Selection</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Access to <strong>10,000+</strong> Influencers</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span><strong>24/7</strong> Support</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>API Integration Access</span>
+                                                </li>
+                                                <li class="list-group-item bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                                    </svg>
+                                                    <span>Up to <strong>10</strong> Ad Accounts</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+        <!-- ========================= subscription-section end ========================= -->
+
+        <!-- ========================= service-section start ========================= -->
+        <section id="services" class="service-section pt-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
+                        <div class="section-title text-center mb-55">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">Services</span>
+                            <h2 class="wow fadeInUp mb-0" data-wow-delay=".4s">What we Offer</h2>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-database"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Data-Driven Campaigns</h4>
+                                <p>Access advanced analytics to design and execute influencer marketing campaigns that deliver measurable results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-target-customer"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Tailored Influencer Partnerships</h4>
+                                <p>Connect with influencers who align perfectly with your brand values and target audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-wallet"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Flexible Budgeting</h4>
+                                <p>Work within any budget, with scalable options that fit businesses of all sizes, from startups to established enterprises.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-alarm-clock"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Real-Time Analytics</h4>
+                                <p>Access powerful analytics to track your campaign performance, optimize on-the-go, and make data-driven decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-stats-up"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Boost Visibility Across Platforms</h4>
+                                <p>Achieve widespread brand recognition with optimized campaigns tailored to multiple social platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-box box-style">
+                            <div class="service-icon box-icon-style">
+                                <i class="lni lni-bolt"></i>
+                            </div>
+                            <div class="box-content-style service-content">
+                                <h4>Reach Influencers Instantly</h4>
+                                <p>Utilize our platform to instantly reach out to influencers and build partnerships. With automated outreach and one-click communication tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= service-section end ========================= -->
+
+        <!-- ========================= portfolio-section start ========================= -->
+        <section id="trending" class="portfolio-section pt-40">
+            <div id="container" class="container">
+                <div class="row align-items-end">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="section-title mb-60">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">Trending</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Influencer Spotlight</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="section-title mb-60">
+                            <p class="wow fadeInUp" data-wow-delay=".4s">Explore the latest ads, designs, and content created by leading influencers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="portfolio-btn-wrapper">
+                            <button class="portfolio-btn active" data-filter="*">All</button>
+                            <button class="portfolio-btn" data-filter=".clothing">Clothing & Fashion</button>
+                            <button class="portfolio-btn" data-filter=".tech">Technology</button>
+                            <button class="portfolio-btn" data-filter=".finance">Finance</button>
+                            <button class="portfolio-btn" data-filter=".health">Health & Fitness</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 grid-item branding marketing tech">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img">
+                                <img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" alt="">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>@BellaPoarch</h4>
+                                    <p>Bella Poarch teams up with HyperX to showcase their gaming gear, highlighting the comfort and performance of their headsets for all gamers.</p>
+                                    <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="theme-btn border-btn glightbox">Full View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item marketing web tech finance">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img">
+                                <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" alt="">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>@GrahamStephan</h4>
+                                    <p>Graham Stephan partners with Webull to promote their commission-free trading platform, highlighting its advanced tools and zero-cost trades for new and experienced investors.</p>
+                                    <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" class="theme-btn border-btn glightbox">Full View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item web graphic tech">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img">
+                                <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" alt="">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>@Mrwhosetheboss</h4>
+                                    <p>Mrwhosetheboss collaborates with Samsung to showcase their latest smartphones, emphasizing innovative features, performance, and cutting-edge design.</p>
+                                    <a href="assets/img/portfolio/portfolio-3.jpg" class="theme-btn border-btn glightbox">Full View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item branding web clothing">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img">
+                                <img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" alt="">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>@Addisonre</h4>
+                                    <p>Addison Rae partners with American Eagle to feature their trendy and comfortable apparel, celebrating self-expression and style for every occasion.</p>
+                                    <a href="assets/img/portfolio/portfolio-4.jpg" class="theme-btn border-btn glightbox">Full View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item web marketing tech finance">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img">
+                                <img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" alt="">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>@MrBeast</h4>
+                                    <p>MrBeast partners with Honey to help his fans save money while shopping online, showcasing how the browser extension automatically finds and applies the best coupons at checkout.</p>
+                                    <a href="assets/img/portfolio/portfolio-6.jpg" class="theme-btn border-btn glightbox">Full View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item marketing graphi health">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img">
+                                <img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" alt="">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h4>@the.truth.doctor</h4>
+                                    <p>Dr. Courtney collaborates with BetterHelp to promote accessible online therapy, highlighting the importance of mental health and the convenience of connecting with licensed professionals from anywhere.</p>
+                                    <a href="assets/img/portfolio/portfolio-5.jpg" class="theme-btn border-btn glightbox">Full View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= portfolio-section end ========================= -->
+
+        <!-- ========================= process-section start ========================= -->
+        <section id="process" class="process-section pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
+                        <div class="section-title text-center mb-55">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">Process</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Getting Started</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Follow these steps to kick off your first influencer campaign: sign up, find your match, connect with creators, and launch your campaign seamlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center time-line">
+                    <div class="col-12">
+                        <div class="single-timeline">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 order-last order-lg-first">
+                                    <div class="timeline-content left-content text-lg-right">
+                                        <div class="box-icon-style">
+                                            <i class="lni lni-search-alt"></i>
+                                        </div>
+                                        <h4 class="mb-2">Sign Up for Free</h4>
+                                        <p>Get started with a free first month! Access all the tools you need to find and collaborate with influencers who can elevate your brand.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-5">
+                                    <div class="timeline-img">
+                                        <img src="{% static 'assets/img/timeline/timeline-1.png' %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-timeline">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5">
+                                    <div class="timeline-img">
+                                        <img src="{% static 'assets/img/timeline/timeline-2.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-5">
+                                    <div class="timeline-content right-content text-left">
+                                        <div class="box-icon-style">
+                                            <i class="lni lni-layers"></i>
+                                        </div>
+                                        <h4 class="mb-2">Find Perfect Creators</h4>
+                                        <p>Use our optimized search tools and filters to explore our extensive database. Discover influencers who fit your brand's goals and audience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-timeline">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 order-last order-lg-first">
+                                    <div class="timeline-content left-content text-lg-right">
+                                        <div class="box-icon-style">
+                                            <i class="lni lni-code-alt"></i>
+                                        </div>
+                                        <h4 class="mb-2">Reach Out to Creators</h4>
+                                        <p>Get in touch with influencers directly through our platform. Start conversations, share ideas, and use our ready-made contracts to keep things efficient.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-5">
+                                    <div class="timeline-img">
+                                        <img src="{% static 'assets/img/timeline/timeline-3.png' %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-timeline">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5">
+                                    <div class="timeline-img">
+                                        <img src="{% static 'assets/img/timeline/timeline-4.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-5">
+                                    <div class="timeline-content right-content text-left">
+                                        <div class="box-icon-style">
+                                            <i class="lni lni-rocket"></i>
+                                        </div>
+                                        <h4 class="mb-2">Launch Your Campaign</h4>
+                                        <p>Launch your campaign with confidence and keep everything on track. Use our tools to manage collaborations, monitor progress, and adjust your strategy to achieve the best results.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= process-section end ========================= -->
+
+        <!-- ========================= contact-section start ========================= -->
+        <section class="contact-section pt-40 pb-100" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="contact-item-wrapper">
+                            <div class="row">
+                                <h2 class="wow fadeInUp mb-3" data-wow-delay=".4s" id="faqspacing"><center>Frequently Asked Questions</center></h2>
+                                <div class="accordion w-100 wow fadeInUp mb-5" id="basicAccordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="basicAccordionCollapseOne">
+                                                How does your platform select the best influencers for my brand?
+                                            </button>
+                                        </h2>
+                                        <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                            data-mdb-parent="#basicAccordion">
+                                            <div class="accordion-body">Our platform uses an AI-driven algorithm to analyze audience data, engagement rates, content style, and relevance to your brand's niche to recommend the most suitable influencers.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="basicAccordionCollapseTwo">
+                                                Can I track the performance of my campaigns in real time?
+                                            </button>
+                                        </h2>
+                                        <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                            data-mdb-parent="#basicAccordion">
+                                            <div class="accordion-body">
+                                                Yes, our dashboard provides real-time analytics on key performance indicators like engagement rates, conversions, ROI, and more to help you assess the success of your campaigns.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="basicAccordionCollapseThree">
+                                                How do I communicate with influencers through your platform?
+                                            </button>
+                                        </h2>
+                                        <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                            data-mdb-parent="#basicAccordion">
+                                            <div class="accordion-body">You can communicate directly with influencers using our in-app messaging system, which supports templates for outreach, contracts, and negotiation to streamline the process.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#basicAccordionCollapseFour" aria-expanded="false" aria-controls="basicAccordionCollapseFour">
+                                                Can I integrate your platform with my existing marketing tools?
+                                            </button>
+                                        </h2>
+                                        <div id="basicAccordionCollapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                            data-mdb-parent="#basicAccordion">
+                                            <div class="accordion-body">Yes, our platform supports API integration with various marketing tools like Google Analytics, Shopify, HubSpot, and more, allowing you to seamlessly connect and synchronize your data across all channels.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#basicAccordionCollapseFive" aria-expanded="false" aria-controls="basicAccordionCollapseFive">
+                                                What is the onboarding process like for new users?
+                                            </button>
+                                        </h2>
+                                        <div id="basicAccordionCollapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                            data-mdb-parent="#basicAccordion">
+                                            <div class="accordion-body">Our onboarding process is straightforward and designed to get you up and running quickly. It includes a detailed walkthrough of the platform's features, one-on-one training sessions, and access to a library of tutorials and best practices.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="lni lni-phone"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h4>Contact</h4>
+                                            <p>help@nexdigital.io</p>
+                                            <p>sales@nexdigital.io</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="lni lni-map-marker"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h4>Address</h4>
+                                            <p>14 Erb St. W, Waterloo, ON N2L 1S7</p>
+                                            <p>Canada</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="contact-form-wrapper">
+                            <div class="row">
+                                <div class="col-xl-10 col-lg-8 mx-auto">
+                                    <div class="section-title text-center mb-50">
+                                        <span class="wow fadeInDown" data-wow-delay=".2s">Get in Touch</span>
+                                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Have Any Questions?</h2>
+                                        <p class="wow fadeInUp" data-wow-delay=".6s">We're here to help! Whether you're curious about our platform, need assistance with your campaigns, or want to learn more about our features, feel free to reach out. Our team is ready to provide the answers and support you need.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="assets/php/mail.php" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" id="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" id="phone" placeholder="Phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="subject" id="email" placeholder="Subject" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="button text-center">
+                                            <button type="submit" class="theme-btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= contact-section end ========================= -->
+
+        <!-- ========================= subscribe-section start ========================= -->
+        <section class="subscribe-section pt-70 pb-70 img-bg" style="background-image: url('{% static 'assets/img/bg/25.png' %}');">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="section-title mb-30">
+                            <span class="text-white wow fadeInDown" data-wow-delay=".2s">Subscribe</span>
+                            <h2 class="text-white mb-40 wow fadeInUp" data-wow-delay=".4s">Get Actually Useful Updates</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <form action="#" class="subscribe-form wow fadeInRight" data-wow-delay=".4s">
+                            <input type="text" name="subs-email" id="subs-email" placeholder="Your Email">
+                            <button type="submit"><i class="lni lni-telegram-original"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= subscribe-section end ========================= -->
+
+        <!-- ========================= footer start ========================= -->
+        <footer class="footer pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-60 wow fadeInLeft" data-wow-delay=".2s">
+                            <a href="index.html" class="logo mb-30"><img src="{% static 'assets/img/logo/footerlogo.png' %}" alt="logo"></a>
+                            <p class="mb-30 footer-desc">Empowering brands to connect with the right influencers and optimize their campaigns for maximum impact. Join NexDigital and elevate your marketing strategy today.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+                        <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".4s">
+                            <h4>Quick Link</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#team">Team</a>
+                                </li>
+                                <li>
+                                    <a href="about">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#pricing">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#trending">Trending</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".6s">
+                            <h4>Service</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="contact">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="/login">Login</a>
+                                </sli>
+                                <li>
+                                    <a href="javascript:void(0)">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="/creatorlogin">Creator Portal</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget mb-60 wow fadeInRight" data-wow-delay=".8s">
+                            <h4>Contact</h4>
+                            <ul class="footer-contact">
+                                <li>
+                                    <p>help@dexdigital.io</p>
+                                </li>
+                                <li>
+                                    <p>sales@dexdigital.io</p>
+                                </li>
+                                <li>
+                                    <p>14 Erb St. W, Waterloo, ON N2L 1S7</br>
+                                    Canada</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-area">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                             <div class="footer-social-links">
+                                <ul class="d-flex">
+                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="lni lni-instagram-original"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>© 2024 NexDigital. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========================= footer end ========================= -->
+
+
+        <!-- ========================= scroll-top ========================= -->
+        <a href="#" class="scroll-top">
+            <i class="lni lni-arrow-up"></i>
+        </a>        
+
+		<!-- ========================= JS here ========================= -->
+		<script src="{% static 'assets/js/bootstrap.bundle-5.0.0.alpha-min.js' %}"></script>
+		<script src="{% static 'assets/js/contact-form.js' %}"></script>
+        <script src="{% static 'assets/js/count-up.min.js' %}"></script>
+        <script src="{% static 'assets/js/tiny-slider.js' %}"></script>
+        <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+        <script src="{% static 'assets/js/glightbox.min.js' %}"></script>
+        <script src="{% static 'assets/js/wow.min.js' %}"></script>
+        <script src="{% static 'assets/js/imagesloaded.min.js' %}"></script>
+		<script type = "module" src="{% static 'assets/js/main.js' %}"></script>
+        <!-- Include MDBootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+
+    </body>
+</html>
