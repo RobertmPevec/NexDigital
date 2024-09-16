@@ -6,27 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="CoreUI - Bootstrap Admin Template">
-    <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,SCSS,HTML,RWD,Dashboard">
-    <title>CoreUI Bootstrap Admin Template</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/favicon/apple-icon-57x57.png' %}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'assets/favicon/apple-icon-60x60.png' %}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/favicon/apple-icon-72x72.png' %}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/favicon/apple-icon-76x76.png' %}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/favicon/apple-icon-114x114.png' %}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/favicon/apple-icon-120x120.png' %}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/favicon/apple-icon-144x144.png' %}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/favicon/apple-icon-152x152.png' %}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/favicon/apple-icon-180x180.png' %}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'assets/favicon/android-icon-192x192.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/favicon/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'assets/favicon/favicon-96x96.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/favicon/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'assets/favicon/manifest.json' %}">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{% static 'assets/favicon/ms-icon-144x144.png' %}">
+    <title>NexDigital | Dashboard</title>
+    <link rel="icon" href="{% static 'assets/img/favicon.ico' %}">
     <meta name="theme-color" content="#ffffff">
-    <!-- Vendors styles-->
     <link rel="stylesheet" href="{% static 'assets/vendors/simplebar/css/simplebar.css' %}">
     <!-- Main styles for this application-->
     <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
@@ -57,6 +40,7 @@
           color: var(--icon-color); /* For other icons or elements that may use the same variable */
         }
       </style>
+    
   </head>
   <!-- The rest of your HTML code -->
 
@@ -64,39 +48,64 @@
         <div class="sidebar sidebar-fixed sidebar-dark bg-dark-gradient border-end" id="sidebar">
             <div class="sidebar-header border-bottom pt-4 pb-4">
               <div class="sidebar-brand">
-                <img src="{% static 'assets/img/logo/logo.png' %}" alt="Logo" width="175" height="32">
+                <img src="{% static 'assets/img/logo/whitelogo.png' %}" alt="Logo" width="175" height="32">
               </div>
               <button class="sidebar-toggler" id="sidebarToggle" type="button" data-coreui-toggle="unfoldable"></button>
               <button class="btn-close d-lg-none" type="button" data-coreui-theme="dark" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
             </div>
-          <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
-            <li class="nav-item"><a class="nav-link" href="index.html">
-                <svg class="nav-icon">
-                    <use xlink:href="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-speedometer' %}"></use>
-                </svg><span data-coreui-i18n="dashboard">Dashboard</span></a></li>
-            <li class="nav-title" data-coreui-i18n="theme">Campaigns</li>
-            <li class="nav-item"><a class="nav-link" href="colors.html">
-                <svg class="nav-icon">
-                  <use xlink:href="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-drop' %}"></use>
-                </svg><span data-coreui-i18n="colors">Create Campaign</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="typography.html">
-                <svg class="nav-icon">
-                  <use xlink:href="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-pencil' %}"></use>
-                </svg><span data-coreui-i18n="typography">Manage Campaigns</span></a></li>
-            </li>
-          </ul>
+            <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+              <li class="nav-item"><a class="nav-link" href="index.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/dashboard.svg' %}" alt="Dashboard Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="dashboard">Dashboard</span></a></li>
+              <li class="nav-title" data-coreui-i18n="theme">Campaigns</li>
+              <li class="nav-item"><a class="nav-link" href="colors.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/add.svg' %}" alt="Create Campaign Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="colors">Create Campaign</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/marketing.svg' %}" alt="Manage Campaigns Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Manage Campaigns</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/handshake.svg' %}" alt="Partnership Listings Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Partnership Listings</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/bar-chart.svg' %}" alt="Performance Tracking Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Performance Tracking</span></a></li>
+              <li class="nav-title" data-coreui-i18n="theme">Research Insights</li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                <img src="{% static 'assets/img/messages.svg' %}" alt="Creator Search Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                <span data-coreui-i18n="typography">Messages</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/search.svg' %}" alt="Creator Search Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Creator Search</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/group.svg' %}" alt="Sponsor Postings" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Sponsor Postings</span></a></li>
+              <li class="nav-title" data-coreui-i18n="theme">Budget & Payments</li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/dollar.svg' %}" alt="Payments & Invoices Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Payments & Invoices</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/contract.svg' %}" alt="Contracts Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Contracts</span></a></li>
+              <li class="nav-title" data-coreui-i18n="theme">Account</li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/settings.svg' %}" alt="Settings Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Settings</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/preferences.svg' %}" alt="Preferences Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Preferences</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="typography.html">
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/link.svg' %}" alt="Link Accounts Icon" class="nav-icon" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                  <span data-coreui-i18n="typography">Link Accounts</span></a></li>
+          </ul>          
         </div>
         <div class="sidebar sidebar-light sidebar-lg sidebar-end sidebar-overlaid border-start" id="aside">
           <div class="sidebar-header p-0 position-relative">
             <ul class="nav nav-underline-border w-100" role="tablist">
               <li class="nav-item"><a class="nav-link active" data-coreui-toggle="tab" href="#timeline" role="tab">
-                  <svg class="icon">
-                    <use xlink:href="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-list' %}"></use>
-                  </svg></a></li>
+                  <img src="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-list' %}" alt="Timeline Icon" class="icon" style="width: 16px; height: 16px;">
               <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#messages" role="tab">
-                  <svg class="icon">
-                    <use xlink:href="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-speech' %}"></use>
-                  </svg></a></li>
+<img src="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-speech' %}" alt="Icon Description" class="icon" style="width: 16px; height: 16px;"></a></li>
               <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#settings" role="tab">
                   <svg class="icon">
                     <use xlink:href="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-settings' %}"></use>
@@ -282,17 +291,17 @@
                 <div class="container-fluid px-4 pt-2 pb-3">
                   <!-- Sidebar Toggle Button for Small Screens -->
                   <button class="header-toggler d-lg-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;">
-                    <img src="{% static 'assets/vendors/@coreui/icons/svg/free.svg#cil-menu' %}" alt="Menu Icon" class="icon icon-lg">
-                  </button>
-              
+                    <img src="{% static 'assets/vendors/@coreui/icons/svg/more.svg' %}" alt="Menu Icon" class="icon icon-lg" style="filter: brightness(0) invert(1);">
+                </button>                
                   <!-- Header Navigation for Larger Screens -->
                   <ul class="header-nav d-none d-md-flex ms-auto">
                     <!-- Notifications Dropdown -->
                     <li class="nav-item dropdown">
                       <a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="d-inline-block my-1 mx-2 position-relative">
-                            <img src="{% static 'assets/img/bell.svg' %}" alt="Theme Icon" style="width: 32px; height: 32px;" class="theme-icon-active">
-                          <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger rounded-circle">
+                          <!-- Use the filter property to change the color -->
+                          <img src="{% static 'assets/img/bell.svg' %}" alt="Theme Icon" style="width: 32px; height: 32px; filter: brightness(0) invert(1);" class="theme-icon-active" id="navbuttonhover">
+                          <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary rounded-circle"></span>
                             <span class="visually-hidden">New alerts</span>
                           </span>
                         </span>
@@ -400,8 +409,8 @@
                     <li class="nav-item dropdown">
                       <a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="d-inline-block my-1 mx-2 position-relative">
-                            <img src="{% static 'assets/img/messages.svg' %}" alt="Theme Icon" style="width: 28px; height: 28px;" class="theme-icon-active">
-                          <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger rounded-circle">
+                          <img src="{% static 'assets/img/messages.svg' %}" alt="Theme Icon" style="width: 32px; height: 32px; filter: brightness(0) invert(1);" class="theme-icon-active" id="navbuttonhover">
+                          <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary rounded-circle">
                             <span class="visually-hidden">New alerts</span>
                           </span>
                         </span>
@@ -409,7 +418,7 @@
                       <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg py-0" style="min-width: 24rem">
                         <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2" data-coreui-i18n="messagesCounter, { 'counter': 7 }">You have 4 messages</div>
                         <a class="dropdown-item" href="#">
-                          <div class="d-flex">
+                          <div class="d-flex mb-3">
                             <div class="avatar flex-shrink-0 my-3 me-3"><img class="avatar-img" src="{% static 'assets/img/avatars/1.jpg' %}" alt="User Avatar"><span class="avatar-status bg-success"></span></div>
                             <div class="message text-wrap">
                               <div class="d-flex justify-content-between mt-1">
@@ -417,7 +426,8 @@
                                 <div class="small text-body-secondary">Just now</div>
                               </div>
                               <div class="fw-semibold"><span class="text-danger">! </span>Urgent: System Maintenance Tonight</div>
-                              <div class="small text-body-secondary">Attention team, we'll be conducting critical system maintenance tonight from 10 PM to 2 AM. Plan accordingly...</div>
+                              <div class="small text-body-secondary">Attention team, we'll be conducting critical system maintenance tonight from 10 PM to 2 AM. Plan accordingly...
+                              <a href="#" class="ms-3 mt-1">Veiw all messages</a></div>
                             </div>
                           </div>
                         </a>
@@ -427,11 +437,7 @@
                   </ul>
               
                   <!-- Profile and Theme Settings -->
-                  <ul class="header-nav ms-auto ms-md-0">
-                    <li class="nav-item dropdown">
-                        <button class="btn btn-link nav-link me-1" type="button" style="width: 32px; height: 32px;" aria-expanded="false" data-coreui-toggle="dropdown">
-                            <img src="{% static 'assets/img/daynight.svg' %}" alt="Theme Icon" style="width: 40px; height: 40px;" class="theme-icon-active">
-                          </button>                                                                      
+                  <ul class="header-nav ms-auto ms-md-0">                                                                    
                       <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
                         <li>
                           <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
@@ -475,7 +481,7 @@
               
                   <!-- Settings Button -->
                   <button class="header-toggler" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside')).show()" style="margin-inline-end: -12px">
-                    <img src="{% static 'assets/img/calendar.svg' %}" alt="Theme Icon" style="width: 32px; height: 32px;" class="theme-icon-active">
+                    <img src="{% static 'assets/img/calendar.svg' %}" alt="Theme Icon" style="width: 32px; height: 32px; filter: brightness(0) invert(1);" class="theme-icon-active" id="navbuttonhover">
                   </button>
                 </div>
               </header>

@@ -1,15 +1,93 @@
 import math
 from youtube_transcript_api import YouTubeTranscriptApi
 from pytube import YouTube
+from datetime import datetime, timedelta
 import string
 import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 import time
-from datetime import datetime, timedelta
 
+def setup_driver():
+    driver_path = '/Users/robert/Desktop/nextlydigital/HOMEPAGE/chromedriver'  # Update with your chromedriver path
+    service = Service(driver_path)
+    options = webdriver.ChromeOptions()
+    options.add_argument("--start-maximized")
+    driver = webdriver.Chrome(service=service, options=options)
+    return driver
+
+def get_dynamic_selector(driver):
+    """Find the dynamic selector for video titles on YouTube."""
+    try:
+        # Try to detect video title elements with possible attributes
+        possible_selectors = ['a#video-title', 'a[title]', 'a[href*="/watch?v="]']
+
+        for selector in possible_selectors:
+            elements = driver.find_elements(By.CSS_SELECTOR, selector)
+            if elements:
+                return selector
+
+        print("No suitable selector found. Please inspect the page and update the script.")
+        return None
+    except Exception as e:
+        print(f"Error finding dynamic selector: {e}")
+        return None
+
+def get_video_links(driver, dynamic_selector):
+    """Extract video links using the dynamically found selector."""
+    if not dynamic_selector:
+        print("No valid selector available.")
+        return []
+
+    # Wait until the video elements are loaded
+    try:
+        WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, dynamic_selector)))
+    except:
+        print("Could not find video elements. Please check the page structure.")
+        return []
+
+    # Extract video links
+    video_elements = driver.find_elements(By.CSS_SELECTOR, dynamic_selector)
+    video_links = [f"{video.get_attribute('href')}" for video in video_elements if video.get_attribute('href')]
+    return video_links
+
+def youtube_video_links(channel_url):
+    driver = setup_driver()
+    driver.get(channel_url)
+    time.sleep(5)
+    dynamic_selector = get_dynamic_selector(driver)
+    scroll_to_bottom(driver)
+    video_links = get_video_links(driver, dynamic_selector)
+    videos = []
+    current_date = datetime.now()
+    two_years_ago = current_date - timedelta(days=2*365)
+    
+    for link in video_links:
+        if 'https://www.youtube.com/watch' in link:
+            upload_date = youtube_upload_date(link)
+            if upload_date >= two_years_ago:
+                videos.append(link)
+            else:
+                break
+    
+    driver.quit()
+    return videos
+
+def scroll_to_bottom(driver):
+    """Scroll to the bottom of the YouTube page to load all videos."""
+    last_height = driver.execute_script("return document.documentElement.scrollHeight")
+    while True:
+        driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
+        time.sleep(2)  # Wait for the page to load more content
+        new_height = driver.execute_script("return document.documentElement.scrollHeight")
+        if new_height == last_height:
+            break
+        last_height = new_height
+    
 def get_transcript(video_url):
     try:
         yt = YouTube(video_url)
@@ -127,39 +205,29 @@ def remove_fillers(video_url):
     cleaned_transcript = ' '.join(cleaned_transcript.split())
     return cleaned_transcript
 
-def get_channel_videos(channel_url):
-    response = requests.get(channel_url)
-    if response.status_code != 200:
-        print(f"Failed to retrieve channel page, status code: {response.status_code}")
-        return []
-    soup = BeautifulSoup(response.text, 'html.parser')
-    video_links = []
-    for link in soup.find_all('a', href=True):
-        href = link['href']
-        if '/watch?v=' in href:
-            video_links.append(f'https://www.youtube.com{href}')
-    video_links = list(set(video_links))
-    videos_last_2_years = filter_videos_last_2_years(video_links)
+def extract_video_metadata(video_url):
+    yt = YouTube(video_url)
 
-    return videos_last_2_years
+    title = yt.title
+    author = yt.author
+    views = yt.views
+    length = yt.length
+    publish_date = yt.publish_date
+    description = yt.description
+    rating = yt.rating
+    thumbnail_url = yt.thumbnail_url
 
-def filter_videos_last_2_years(video_links):
-    filtered_links = []
-    two_years_ago = datetime.now() - timedelta(days=2*365)
-
-    for link in video_links:
-        video_page = requests.get(link)
-        video_soup = BeautifulSoup(video_page.text, 'html.parser')
-
-        # You may need to adjust the selector based on the YouTube HTML structure
-        date_tag = video_soup.find('meta', itemprop='datePublished')
-
-        if date_tag:
-            published_date = date_tag['content']
-            video_date = datetime.strptime(published_date, '%Y-%m-%d')
-
-            # Check if the video was published within the last 2 years
-            if video_date >= two_years_ago:
-                filtered_links.append(link)
-
-    return filtered_links
+    return {
+        "title": title,
+        "author": author,
+        "views": views,
+        "length": length,
+        "publish_date": publish_date,
+        "description": description,
+        "rating": rating,
+        "thumbnail_url": thumbnail_url
+    }
+def youtube_upload_date(video_url):
+    yt = YouTube(video_url)
+    publish_date = yt.publish_date
+    return publish_date

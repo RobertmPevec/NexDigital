@@ -1,8 +1,9 @@
-from utils import get_transcript, remove_fillers, get_channel_videos, filter_videos_last_2_years
-# total_transcript = get_transcript('https://www.youtube.com/watch?v=hUY8DiQgUUg')
+from utils import *
 # filtered_transcript = remove_fillers('https://www.youtube.com/watch?v=hUY8DiQgUUg')
-# print(total_transcript)
-# print("----------------------------------")
 # print(filtered_transcript)
-videos = get_channel_videos('https://www.youtube.com/@KillTony')
+
+videos = youtube_video_links('https://www.youtube.com/@JayCity/videos')
 print(videos)
+
+# value = extract_video_metadata('https://www.youtube.com/watch?v=ESA-SovXyxY')
+# print(value)
